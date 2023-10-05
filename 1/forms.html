@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <h1>Create User:</h1>
+    <form action="/" method="POST">
+      <label for="username">User Name: </label>
+      <input type="text" id="username" /> <br><br>
+
+      <label for="password">Password: </label>
+      <input type="password" id="password" required minlength="8" maxlength="24" /><br><br>
+
+        <label for="email">Email: </label>
+        <input type="email" id="email" /><br><br>
+
+        <label for="birthday">Birthday: </label>
+        <input type="date" id="birthday" /><br><br>
+
+      <label for="weight">Weight: </label>
+      <input type="number" id="weight" min="0" /><br><br>
+
+      <label for="gender">Gender: </label>
+      <select id="gender">
+        <option>None</option>
+        <option>Male</option>
+        <option>Female</option>
+        <option>Others</option>
+        <option>Prefer not to say</option>
+        <select /><br> <br>
+
+        <label for="terms-and-conditions" >I have read all <a>T&C's</a> and I agree to it</label>
+        <input type="checkbox" id="terms-and-conditions" /> <br> <br>
+
+      <input type="reset" />
+      <input type="submit" />
+    </form>
+  </body>
+</html>
